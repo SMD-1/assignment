@@ -20,6 +20,7 @@ body {
 .title {
   margin-bottom: 30px;
   margin-top: 40px;
+  padding: 20px;
 }
 .title p {
   margin-top: 10px;
@@ -59,6 +60,7 @@ body {
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
+  padding: 20px;
 }
 .counter {
   width: 400px;
@@ -112,4 +114,15 @@ li i {
 .total-items {
   margin-top: 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #counters-container {
+    padding: 10px;
+  }
 }
