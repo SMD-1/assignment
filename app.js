@@ -52,6 +52,12 @@ const renderCounters = () => {
 
 const addItems = () => {
   const enteredItem = parseInt(input.value);
+
+  if (isNaN(enteredItem) || enteredItem <= 0) {
+    alert("Please enter number of items greater than 0.");
+    return;
+  }
+
   const indexOfMinItemsSum = sumOfItemsInCounters.indexOf(
     Math.min(...sumOfItemsInCounters)
   );
